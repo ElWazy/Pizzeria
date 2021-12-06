@@ -5,19 +5,29 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.lutrias.pizzeria.context.pizza.domain.PizzaRepository;
+import com.lutrias.pizzeria.context.pizza.infrastructure.InMemoryPizzaRepository;
+
+import java.io.Serializable;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageButton[] imageButtons;
     private Button btnPizzaMaintainer, btnPizzaList, btnPizzaMaker;
 
+    private PizzaRepository repository;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        repository = new InMemoryPizzaRepository();
 
         obtainComponents();
         setButtonEvents();
@@ -53,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void changeActivity(Class activity) {
         Intent intent = new Intent(getBaseContext(), activity);
+        intent.putExtra("repository", (Serializable) repository);
         startActivity(intent);
     }
 

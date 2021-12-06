@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "596308725140",
+    "project_id": "pizzeria-a4bf2",
+    "storage_bucket": "pizzeria-a4bf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596308725140:android:970e6123bb0b42bef75381",
+        "android_client_info": {
+          "package_name": "com.lutrias.pizzeria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596308725140-cerpjq3rd4tjlrg3m0uvdfol2j4i7bb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyryOmWV4aZeD80MHzYG4_jo1kq9mIohY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596308725140-cerpjq3rd4tjlrg3m0uvdfol2j4i7bb2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
