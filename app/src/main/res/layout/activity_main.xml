@@ -114,8 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="24dp"
-                    android:orientation="vertical"
-                    android:padding="24dp">
+                    android:orientation="vertical">
 
                     <Button
                         android:id="@+id/btnPizzaMaintainer"
