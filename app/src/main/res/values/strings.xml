@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pizzeria</string>
+    <string name="cuerpo">
+        En esta sección usted podrá armar su propia pizza y
+        además elegir los ingredientes a su elección como
+        máximo tres, por otra parte podrá ver los cargos
+        adicionales expuestos por cada ingrediente.
+    </string>
+</resources>
